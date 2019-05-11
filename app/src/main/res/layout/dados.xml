@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Dados">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            tools:layout_editor_absoluteY="49dp" tools:layout_editor_absoluteX="48dp" android:id="@+id/edIdade"
+            android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp" android:layout_marginStart="33dp"
+            android:hint="Idade"/>
+    <TextView
+            android:text="Idade:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            android:layout_alignStart="@+id/edIdade"
+            android:layout_above="@+id/edIdade" android:layout_marginBottom="14dp"
+            android:layout_marginStart="-101dp"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginTop="92dp"
+            android:layout_alignStart="@+id/edIdade"/>
+    <RadioButton
+            android:text="Masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true" android:id="@+id/rbMasculino"
+            android:layout_marginTop="105dp" android:layout_alignStart="@+id/edIdade" android:checked="true"/>
+    <RadioButton
+            android:text="Feminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true" android:id="@+id/rbFeminino"
+            android:layout_marginTop="104dp" android:layout_alignStart="@+id/edIdade"
+            android:layout_marginStart="131dp" android:layout_marginBottom="1dp"
+            android:layout_alignBottom="@+id/rbMasculino"/>
+    <Spinner
+            android:layout_width="223dp"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:id="@+id/spinner" android:layout_marginTop="12dp"
+            android:layout_marginStart="30dp" android:layout_below="@+id/rbMasculino"/>
+    <Button
+            android:text="Confirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"
+            android:layout_alignParentBottom="true" android:id="@+id/btConfirmar" android:layout_marginBottom="23dp"/>
+</RelativeLayout>
